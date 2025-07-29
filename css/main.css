@@ -1,0 +1,225 @@
+body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@font-face {
+  font-family: AileronRegular;
+  src: url(../fonts/AileronRegular.d321fa78bb7190a8ca7e14213.efb8e00a810ae053334deaa5cdde1d26.woff2);
+}
+
+@font-face {
+  font-family: AileronBold;
+  src: url(../fonts/Aileron-Bold.d626942d7f2d1a723c211b79dc9.83a1bcd0ead0443eec51934c4bce7519.woff2);
+}
+
+@font-face {
+  font-family: NowBold;
+  src: url(../fonts/Now\ Bold.8bf380d586aa4d113773af255819b75.65cd16297a75fd8c71fe1c84f14ea8c1.woff2);
+}
+
+@font-face {
+  font-family: NowBlack;
+  src: url(../fonts/Now\ Black.b92717ab2046bc7cc4d6755b247f8b.0ffe2fce002a37e0b8bbe5aae9e443c1.woff2);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+
+header {
+  height: 180px;
+  background-color: #323b4c;
+  display: flex;
+  align-items: center;
+}
+
+header > h1 {
+  font-weight: bold;
+  color: #fdfdfd;
+  margin-left: 310px;
+}
+
+h1,
+h2 {
+  font-family: NowBold, sans-serif;
+}
+.left-box p,
+.left-box li,
+.profile p {
+  font-family: Lato, sans-serif;
+}
+
+.circle {
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  background-color: #fdfdfd;
+  border-radius: 50%;
+  top: 70px;
+  left: 30px;
+}
+.photo {
+  height: 180px;
+  width: 180px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.photo img {
+  height: 240px;
+  position: absolute;
+  top: -10px;
+}
+
+.left-section {
+  background-color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: calc(100vh - 180px);
+}
+
+.left-box {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.left-box:first-of-type {
+  margin-top: 70px;
+}
+
+h2 {
+  color: #323b4c;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 12px;
+}
+
+.left-box i {
+  display: flex;
+  align-items: center;
+  width: 14px;
+}
+.left-box p,
+.left-box li {
+  font-size: 0.8rem;
+}
+
+.left-box li {
+  margin-left: 20px;
+  padding-top: 6px;
+}
+
+.left-box ul {
+  margin-top: 10px;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #323b4c;
+}
+
+.contacts {
+  display: flex;
+  gap: 10px;
+  padding-top: 5px;
+}
+
+.letter {
+  font-size: 13px;
+}
+.right-section {
+  background-color: #fdfdfd;
+  margin-left: 60px;
+}
+
+.right-section .line {
+  margin-bottom: 8px;
+}
+
+.right-section h2 {
+  padding-bottom: 5px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.right-section i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 14px;
+  left: -50px;
+  top: 0;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  color: #fdfdfd;
+  background-color: #323b4c;
+  padding-left: 2px;
+}
+.profile h2 {
+  margin-top: 10px;
+}
+
+.profile p {
+  margin-top: 4px;
+  text-align: justify;
+}
+
+.right-section p,
+.right-section li {
+  font-size: 0.8rem;
+}
+
+.company-year {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+}
+
+.company p {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.year p {
+  font-size: 15px;
+}
+
+.right-section li {
+  margin-left: 15px;
+}
+
+.first-education {
+  margin-bottom: 0px;
+}
+
+.download-pdf {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.download-pdf:hover {
+  background-color: #0056b3;
+}
